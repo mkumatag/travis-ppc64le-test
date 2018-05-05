@@ -10,6 +10,9 @@ go:
 - 1.10.2
 - tip
 
+install:
+- go version
+
 script:
 - go version
 - uname -a
