@@ -1,0 +1,18 @@
+language: go
+
+os: linux-ppc64le
+
+sudo: required
+
+services: docker
+
+go:
+- 1.10.2
+- tip
+
+script:
+- go version
+- uname -a
+- cat /proc/cpuinfo
+- cat /proc/meminfo
+- cat /etc/os-release
